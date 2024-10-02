@@ -2,6 +2,8 @@
 
 A simple hashtag converter tool built with Next.js to streamline your SEO work by converting comma-separated tags into hashtags.
 
+![image](https://github.com/user-attachments/assets/2409625c-4113-4f13-b889-88f8de197fa0)
+
 ## Features
 
 - Convert comma-separated tags into hashtags
