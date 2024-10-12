@@ -14,8 +14,8 @@ export default function Home() {
     const tags = input
       .split(",")
       .map((tag) => {
-        // Trim whitespace and remove trailing symbols
-        const cleanedTag = tag.trim().replace(/[\s\W_]+$/, "");
+        // Trim whitespace, remove trailing symbols, and replace hyphens with underscores
+        const cleanedTag = tag.trim().replace(/[\s\W_]+$/, "").replace(/-/g, "_");
         return `#${cleanedTag.replace(/\s+/g, "")}`;
       })
       .join(", ");
