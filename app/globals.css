@@ -10,9 +10,13 @@ body {
   font-weight: 400;
   font-style: normal;
   background-color: #f0f4f8;
-  color: #1a202c;
+  color: #ffffff;
   height: 100vh;
   font-size: 18px;
+  background-image: url("https://wallpapercave.com/wp/wp1883453.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 a {
   color: #8260e9;
@@ -23,7 +27,8 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: auto;
+  height: 100vh;
   max-width: 600px;
   padding: 20px;
 }
@@ -72,6 +77,10 @@ button {
 }
 button:hover {
   background-color: #005bb5;
+}
+button:nth-child(3) {
+  background-color: #ff4c4c;
+  color: #fff;
 }
 .output-section textarea {
   background-color: #f0f0f0;

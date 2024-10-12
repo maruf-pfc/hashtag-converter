@@ -13,7 +13,11 @@ export default function Home() {
   const convertTags = () => {
     const tags = input
       .split(",")
-      .map((tag) => `#${tag.trim().replace(/\s+/g, "")}`)
+      .map((tag) => {
+        // Trim whitespace and remove trailing symbols
+        const cleanedTag = tag.trim().replace(/[\s\W_]+$/, "");
+        return `#${cleanedTag.replace(/\s+/g, "")}`;
+      })
       .join(", ");
     setOutput(tags);
   };
@@ -21,6 +25,11 @@ export default function Home() {
   const copyToClipboard = () => {
     navigator.clipboard.writeText(output);
     toast.success("Copied to clipboard!");
+  };
+
+  const resetFields = () => {
+    setInput("");
+    setOutput("");
   };
 
   return (
@@ -40,6 +49,7 @@ export default function Home() {
       <div className="button-section">
         <button onClick={convertTags}>Convert</button>
         <button onClick={copyToClipboard}>Copy</button>
+        <button onClick={resetFields}>Reset</button>
       </div>
       <div className="output-section">
         <label htmlFor="output">Output:</label>
@@ -47,16 +57,11 @@ export default function Home() {
         <ToastContainer />
       </div>
       <footer className="footer">
-        <p>
-          © {year}{" "}
-          <a
-            href="https://www.youtube.com/@ProgrammingforCareer"
-            target="_blank"
-          >
-            Programming for Career{" "}
-          </a>
-        </p>
-        <span>- All rights reserved.</span>
+        © {year}{" "}
+        <a href="https://www.youtube.com/@ProgrammingforCareer" target="_blank">
+          Programming for Career{" "}
+        </a>
+        <span> - All rights reserved.</span>
       </footer>
     </div>
   );
