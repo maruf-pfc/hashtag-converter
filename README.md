@@ -1,18 +1,24 @@
 # Hashtag Converter
 
-A simple hashtag converter tool built with Next.js to streamline your SEO work by converting comma-separated tags into hashtags.
+A professional, pixel-perfect hashtag converter tool built with Next.js. Transform your comma-separated tags into clean, platform-ready hashtags for Instagram, TikTok, and Reels instantly.
 
 ![Project Demo](./demo.png)
 
-## Features
+## ✨ Features
 
-- Convert comma-separated tags into hashtags
-- Copy the converted hashtags to clipboard with a single click
-- Responsive design for both desktop and mobile devices
+- **Professional UI**: High-fidelity SaaS aesthetic with premium glassmorphism.
+- **Convert & Clean**: Instantly transform comma-separated tags into optimized hashtags.
+- **Theme Toggle**: Seamless light/dark mode support with persistent state.
+- **Pixel Perfect**: Strict attention to spacing, typography, and micro-animations.
+- **Privacy First**: No tracking, no login, and no data stored.
+- **Responsive**: Fully optimized for mobile, tablet, and desktop.
+
+## 🚀 Getting Started
 
 ### Prerequisites
 
-You need to have Node.js and npm installed on your machine. You can download them from [Node.js](https://nodejs.org/).
+- Node.js (Latest LTS)
+- pnpm (Recommended) or npm
 
 ### Installation
 
@@ -26,24 +32,25 @@ You need to have Node.js and npm installed on your machine. You can download the
    ```
 3. Install the dependencies:
    ```bash
-   npm install
+   pnpm install
    ```
 4. Run the development server:
    ```bash
-   npm run dev
+   pnpm dev
    ```
-5. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Usage
+## 🛠️ Built With
 
-1. Enter tags separated by commas in the input field.
-2. Click the "Convert" button to convert the tags into hashtags.
-3. Click the "Copy" button to copy the converted hashtags to your clipboard.
+- **Framework**: [Next.js 16](https://nextjs.org/) (App Router)
+- **Styling**: Vanilla CSS (Custom Design System)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Components**: [React 19](https://react.dev/)
 
-## Built With
+## 📜 License
 
-- [Next.js](https://nextjs.org/) - The React Framework for Production
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## License
+Developed with ❤️ by [Md. Maruf Sarker](https://github.com/maruf-pfc)
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
